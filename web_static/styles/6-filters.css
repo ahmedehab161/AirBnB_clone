@@ -31,12 +31,32 @@ button:hover {
     width: 25%;
     border: 1px solid #DDDDDD;
     text-align: left;
+    padding-left: 18px;
 }
 
 .amenities {
     height: 100%;
     width: 25%;
     text-align: left;
+    padding-left: 18px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.popover{
+    color: black;
+    display: none;
+    background-color: #FAFAFA;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    width: 108%;
+    padding-left: 15px;
+    margin-left: -19px;
+    margin-top: -10px;
+    box-sizing: border-box;
+
 }
 
 .amenities h3,
@@ -53,4 +73,16 @@ button:hover {
     font-size: 14px;
     color: black;
     margin-left: 12px;
+}
+
+.popover h2{
+    font-size: 16px;
+}
+
+.locations:hover .popover{
+    display: block;
+}
+
+.amenities:hover .popover{
+    display: block;
 }
